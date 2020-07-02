@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viktor`s Random Word Generator</title>
+</head>
+<body>
+<p>This is a random string generator.Please click the button to generate a random string:</p><br>
+<button type = "button"> <a href = "random_word">Generate Random String Now</a> </button>
+<div class="string generator">
+    <p>Your Random String is: {{request.session.rstring}}</p>
+    <p>Your have generated {{request.session.count}} random strings so far.</p>
+
+    <button type = "button">   <a href = "/random_word/reset"> Reset Count</a> </button>
+<body>
